@@ -10,7 +10,7 @@ import { createVerifiableCredentialJwt } from 'did-jwt-vc'
 import { createVerifiablePresentationJwt } from 'did-jwt-vc'
 
 // Request a 32 byte key
-const size = parseInt(process.argv.slice(2)[0]) || 32;
+const size = 32;
 const randomString = crypto.randomBytes(size).toString("hex");
 // TEMP: Use a fixed key for testing
 //const key = randomString;
