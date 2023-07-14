@@ -1,5 +1,5 @@
 function getKey() {
-  const size = parseInt(process.argv.slice(2)[0]) || 32;
+  const size = 32;
   const randomString = crypto.randomBytes(size).toString("hex");
   return randomString;
 }
